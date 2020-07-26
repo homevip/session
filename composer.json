@@ -1,0 +1,27 @@
+{
+    "name": "homevip/session",
+    "description": "Session 类",
+    "homepage": "https://github.com/homevip/session.git",
+    "license": "MIT",
+    "keywords": [
+        "library",
+        "helpers",
+        "laravel",
+        "php"
+    ],
+    "authors": [
+        {
+            "name": "homevip",
+            "email": "homevip@126.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "homevip\\": "src"
+        }
+    }
+}
