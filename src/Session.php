@@ -45,7 +45,7 @@ class Session implements ISession, ISessionHandler
      *
      * @return void
      */
-    public static function instance()
+    public static function instance(): object
     {
         if (!self::$instance instanceof self) {
             self::$instance = new self();
@@ -324,7 +324,7 @@ class Session implements ISession, ISessionHandler
     public function cache(string $name, $value = '', int $options = 60)
     {
         $cache = $this->redis;
-        $name = 'session_' . $name;
+        $name = 'session:' . $name;
 
         if ('' == $cache) {
             exit('redis 连接错误');
